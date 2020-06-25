@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+
+/* GOOGLE HOMEPAGE STYLING
+=================================================================================== */
+
+body {
+    font-family: arial,sans-serif;
+    color: #222;
+}
+
+/* GOOGLE HOMEPAGE HEADER STYLING
+=================================================================================== */
+
+header {
+    height: 60px;
+    display: grid;
+    position: absolute;
+    grid-template-columns: 50px 50px 40px 50px;
+    align-content: center;
+    gap: 5px;
+    padding: 20px;
+    top: 0;
+    right: 0;
+}
+
+#profile-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    object-fit: fill;
+}
+
+#app-menu {
+    width: 22px;
+    height: 22px;
+    opacity: 80%;
+}
+
+#app-menu:hover {
+    opacity: 100%;
+}
+
+.header-link {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0,0,0,0.87);
+    text-decoration: none;
+    font-size: smaller;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 50px;
+    outline: none;
+    vertical-align: bottom;
+}
+
+.header-link:hover,
+.header-link:focus {
+    opacity: .85;
+    text-decoration: underline;
+}
+
+.header-img {
+    margin: auto;
+}
+
+
+/* GOOGLE HOMEPAGE MAIN CONTENT STYLING
+=================================================================================== */
+main {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    margin-top: 22vh;
+}
+
+.logo-div {
+    margin: auto;
+    padding-bottom: 25px;
+}
+
+#logo {
+    width: 272px;
+}
+
+.search-div {
+    margin: auto;
+    max-width: 100%;
+    display: flex;
+    align-content: center;
+}
+
+
+.search-bar {
+    width: 582px;
+    max-width: 90%;
+    margin: auto;
+    height: 44px;
+    padding: 5px 50px 5px 50px;
+    border-radius: 30px;
+    border: 1px solid #dfe1e5;
+    background-image:url(../images/search-icon.png);     
+    background-repeat:no-repeat;
+    background-size: 25px;
+    background-position: 11px 7px;
+    font-family: arial,sans-serif;
+    font-size: 16px;
+}
+
+.search-bar:hover,
+.search-bar:active {
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28)
+}
+
+.button-div {
+    margin: auto;
+    padding-top: 20px;
+}
+
+.g-button {
+background-color: #f2f2f2;
+border: 1px solid #f2f2f2;
+border-radius: 4px;
+color: #5F6368;
+font-family: arial,sans-serif;
+font-size: 14px;
+margin: 11px 4px;
+padding: 0 16px;
+line-height: 27px;
+height: 36px;
+min-width: 54px;
+text-align: center;
+cursor: pointer;
+user-select: none;
+}
+
+.g-button:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+background-image: linear-gradient(top,#f8f8f8,#f1f1f1);
+background-color: #f8f8f8;
+border: 1px solid #c6c6c6;
+color: #222;
+}
+
+.lang-div {
+    margin: auto;
+    padding-top: 15px;
+}
+.lang-p {
+    font-size: small;
+}
+
+#lang-link {
+    color: #1a0dab;
+text-decoration: none;
+}
+
+#lang-link:hover {
+    text-decoration: underline;
+}
+
+/* GOOGLE HOMEPAGE FOOTER STYLING
+=================================================================================== */
+
+.footer-bar {
+    background: #f2f2f2;
+line-height: 40px;
+width: 100%;
+font-size: 1em;
+
+}
+
+#footer {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+}
+
+#footer-region {
+    line-height: 40px;
+    text-align: left;
+    color: rgba(0,0,0,.54);
+    font-size: 16px;
+    padding-left: 30px;
+}
+
+#footer-top,
+#footer-bottom {
+    border-top: 1px solid #e4e4e4;
+}
+
+
+#footer-info a {
+    padding-left: 30px;
+}
+
+#footer-terms {
+    float: right;
+}
+
+#footer-terms a {
+    padding-right: 30px;
+}
+
+.footer-div a {
+    color: #5f6368;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.footer-div a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 500px) {
+    #footer-region,
+    .footer-div a {
+        font-size: 10px;
+    }
+}
